@@ -7,6 +7,3 @@ export default function getFullResponseFromAPI(success) {
 
   return promise;
 }
-
-console.log(getFullResponseFromAPI(true));
-console.log(getFullResponseFromAPI(false));

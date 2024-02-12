@@ -3,9 +3,8 @@ export default function cleanSet(set, startString) {
   const strings = [];
 
   set.forEach((value) => {
-    const check = value.startsWith(startString);
-    if (check) {
-      strings.push(value.substring(`${startString.length}`));
+    if (typeof value === 'string' && value.startsWith(startString)) {
+      strings.push(value.substring(startString.length));
     }
   });
   return strings.join('-');

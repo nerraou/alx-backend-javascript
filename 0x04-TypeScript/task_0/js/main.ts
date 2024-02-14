@@ -20,7 +20,7 @@ const student2: Student = {
 
 const studentsList: Student[] = [student1, student2];
 
-export default function tableCreate() {
+function tableCreate() {
   const body = document.body;
   const table = document.createElement("table");
   table.style.width = "50%";
@@ -41,3 +41,5 @@ export default function tableCreate() {
 
   body.appendChild(table);
 }
+
+tableCreate();
